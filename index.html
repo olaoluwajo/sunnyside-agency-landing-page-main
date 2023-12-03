@@ -39,7 +39,7 @@
         </div>
         <div class="navbar__menu">
           <ul class="navbar__list">
-            <li class="navbar__item"><a href="#">About</a></li>
+            <li class="navbar__item"><a href="transform-page">About</a></li>
             <li class="navbar__item"><a href="#">Services</a></li>
             <li class="navbar__item"><a href="#">Projects</a></li>
             <li class="navbar__item"><button href="#">Contact</button></li>
@@ -50,14 +50,18 @@
       <div class="header__content">
         <div class="header__text">
           <h1>We are creatives</h1>
-          <img src="/images/icon-arrow-down.svg" alt="arrow down" />
+          <a href="#transform-page" class="href">
+            <img src="/images/icon-arrow-down.svg" alt="arrow down" />
+          </a>
         </div>
       </div>
     </header>
 
     <main>
       <div class="transform__img__wrapper section1">
-        <img src="/images/mobile/image-transform.jpg" alt="image transform" />
+        <a id="transform-page"
+          ><img src="/images/mobile/image-transform.jpg" alt="image transform"
+        /></a>
         <div class="section1__text">
           <h2>Transform your brand</h2>
           <p>
@@ -81,7 +85,6 @@
         </div>
       </div>
       <div class="graphic-design__img__wrapper section2">
-       
         <div class="section2__text">
           <h2>Graphic design</h2>
           <p>
@@ -92,7 +95,6 @@
         </div>
       </div>
       <div class="photography__img__wrapper section2">
-    
         <div class="section2__text">
           <h2>Photography</h2>
           <p>
@@ -103,12 +105,105 @@
       </div>
     </main>
 
+    <section class="client__testimonial">
+      <div class="testimonial__wrapper">
+        <div class="testimonial__text testimonial-1">
+          <h2>Client testimonials</h2>
+          <div class="testimonial__author">
+            <img src="/images/image-emily.jpg" alt="emily" />
+          </div>
+
+          <p>
+            We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.
+          </p>
+          <div class="testimonial__author__text">
+            <h3>Emily R.</h3>
+            <p>Marketing Director</p>
+          </div>
+        </div>
+        <div class="testimonial__text testimonial-2">
+          <div class="testimonial__author">
+            <img src="/images/image-thomas.jpg" alt="thomas" />
+          </div>
+
+          <p>
+            Sunnyside’s enthusiasm coupled with their keen interest in our
+            brand’s success made it a satisfying and enjoyable experience.
+          </p>
+          <div class="testimonial__author__text">
+            <h3>Thomas S.</h3>
+            <p>Chief Operating Officer</p>
+          </div>
+        </div>
+        <div class="testimonial__text testimonial-3">
+          <div class="testimonial__author">
+            <img src="/images/image-jennie.jpg" alt="jennie" />
+          </div>
+
+          <p>
+            Incredible end result! Our sales increased over 400% when we worked
+            with Sunnyside. Highly recommended!
+          </p>
+          <div class="testimonial__author__text">
+            <h3>Jennie F.</h3>
+            <p>Business Owner</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sample__images">
+      <div class="sample__images__wrapper">
+        <div class="sample__image__wrapper sample__image__wrapper-1">
+          <img
+            src="/images/mobile/image-gallery-milkbottles.jpg"
+            alt="milk bottles"
+          />
+        </div>
+        <div class="sample__image__wrapper sample__image__wrapper-2">
+          <img src="/images/mobile/image-gallery-orange.jpg" alt="orange" />
+        </div>
+        <div class="sample__image__wrapper sample__image__wrapper-3">
+          <img src="/images/mobile/image-gallery-cone.jpg" alt="cone" />
+        </div>
+        <div class="sample__image__wrapper sample__image__wrapper-4">
+          <img
+            src="/images/mobile/image-gallery-sugar-cubes.jpg"
+            alt="sugar cubes"
+          />
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+          <img src="/images/logo.svg" alt="logo" />
+        </div>
+        <div class="footer__menu">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#">About</a></li>
+            <li class="footer__item"><a href="#">Services</a></li>
+            <li class="footer__item"><a href="#">Projects</a></li>
+          </ul>
+        </div>
+        <div class="footer__social">
+          <img src="/images/icon-facebook.svg" alt="facebook" />
+          <img src="/images/icon-instagram.svg" alt="instagram" />
+          <img src="/images/icon-twitter.svg" alt="twitter" />
+          <img src="/images/icon-pinterest.svg" alt="pinterest" />
+        </div>
+      </div>
+    </footer>
+
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">OLA</a>.
     </div>
+
     <script src="/js/script.js"></script>
   </body>
 </html>
