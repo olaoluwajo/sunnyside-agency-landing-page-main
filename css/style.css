@@ -95,15 +95,10 @@
   }
 
   .navbar {
-    /* padding-top: 32px; */
     padding-bottom: 65px;
-
-    /* position: fixed; */
   }
 
   .navbar__logo {
-    /* padding-top: 32px; */
-
     padding: 32px 22px 10px 22px;
     display: flex;
     justify-content: space-between;
@@ -111,7 +106,6 @@
     position: absolute;
     width: 100%;
     z-index: 3;
-    /* background-color: rgb(47, 189, 236); */
   }
 
   .navbar__logo img.logo {
@@ -121,7 +115,6 @@
   .logo__hamburger {
     width: 20px;
     cursor: pointer;
-    /* animation: ham 1s ease-in-out backwards; */
   }
   .logo__hamburger.show {
     transform: rotate(90deg);
@@ -139,13 +132,19 @@
 
   .navbar__menu {
     display: none; /* <--- this is the problem; */
-    /* padding-top: 100px; */
     position: fixed;
     background-color: rgb(47, 189, 236);
     max-width: 100%;
-
-    padding: 5rem 5rem 50rem;
+   
+    padding: 5rem 5rem 50rem 5rem;
     z-index: 2;
+  }
+
+  @media (max-width:768px) {
+    .navbar__menu{
+      width: 100%;
+    }
+    
   }
   .navbar__menu.show {
     animation: menu 1s ease-in-out backwards;
@@ -165,7 +164,10 @@
       opacity: 1;
     }
   }
-
+  .navbar__menu ul{
+    /* margin-left: 50px; */
+  }
+  
   .navbar__menu a {
     list-style-type: none;
     display: block;
@@ -492,6 +494,7 @@
       padding-left: 50px;
     }
     .navbar__menu {
+      
       display: flex;
       justify-content: space-between;
       align-items: center;
